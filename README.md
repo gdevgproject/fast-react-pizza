@@ -122,3 +122,30 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 ---
 
 By following these steps, you ensure that your project maintains consistent formatting and coding standards across all contributors.
+
+---
+
+# Professional File Structure using "Feature Based Structure"
+
+## /features
+
+- Each feature folder contains all the components, custom hooks, and all the JS files required for that feature to work (co-located).
+- This structure eliminates the need to constantly jump around the folder hierarchy.
+
+## /ui
+
+- This folder contains reusable components such as buttons, inputs, etc.
+- These components are not tied to any specific feature.
+- It should not contain side effects, only presentation-related code.
+
+## /services
+
+- This folder is used for interacting with external APIs.
+- It's designed for reuse across different features and handles API requests.
+
+## /utils
+
+- Contains stateless helper functions.
+- These functions should not have side effects and are reusable across various parts of the application.
+
+---
