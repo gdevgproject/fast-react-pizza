@@ -6,6 +6,7 @@ import Order, { loader as orderLoader } from './features/order/Order'
 import AppLayout from './ui/AppLayout'
 import Error from './ui/Error'
 import Home from './ui/Home'
+import Loader from './ui/Loader'
 
 const router = createBrowserRouter([
   {
@@ -28,5 +29,5 @@ const router = createBrowserRouter([
 ])
 
 export default function App() {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} fallbackElement={<Loader />} />
 }
