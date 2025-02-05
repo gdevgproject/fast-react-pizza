@@ -7,12 +7,32 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md): Uses [Babel](https://babeljs.io/) for Fast Refresh.
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc): Uses [SWC](https://swc.rs/) for Fast Refresh.
 
+## Step 0: Setup Project
+
+First, create the project using Vite:
+
+```bash
+yarn create vite
+```
+
+Then, navigate into your project directory:
+
+```bash
+cd <project-name>
+```
+
+Next, install the necessary dependencies for Tailwind CSS and React Router:
+
+```bash
+yarn add tailwindcss react-router
+```
+
 ## Step 1: Install ESLint and Prettier Packages
 
 Run the following command to install the necessary packages:
 
 ```bash
-yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+yarn add -D prettier eslint-config-prettier eslint-plugin-prettier prettier-plugin-tailwindcss
 ```
 
 ### Package Descriptions
@@ -20,6 +40,7 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 - **prettier**: A code formatter.
 - **eslint-config-prettier**: Disables ESLint rules that conflict with Prettier.
 - **eslint-plugin-prettier**: Adds Prettier rules to ESLint.
+- **prettier-plugin-tailwindcss**: A Prettier plugin that automatically sorts Tailwind CSS classes in a logical and consistent order.
 
 ## Step 2: Configure ESLint for Code Standardization
 
@@ -56,7 +77,7 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
        useTabs: false,
        singleQuote: true,
        printWidth: 120,
-       jsxSingleQuote: true
+       jsxSingleQuote: true,
      }
    ]
    ```
@@ -75,7 +96,8 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
      "useTabs": false,
      "singleQuote": true,
      "printWidth": 120,
-     "jsxSingleQuote": true
+     "jsxSingleQuote": true,
+     "plugins": ["prettier-plugin-tailwindcss"]
    }
    ```
 
