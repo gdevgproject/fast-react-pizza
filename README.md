@@ -46,7 +46,7 @@ Next, install the necessary dependencies for Tailwind CSS and React Router:
 yarn add tailwindcss @tailwindcss/vite react-router-dom @reduxjs/toolkit react-redux
 ```
 
-For Details: https://tailwindcss.com/docs/installation/using-vite
+[vite.config.ts](https://tailwindcss.com/docs/installation/using-vite)
 
 ## Step 1: Install ESLint and Prettier Packages
 
