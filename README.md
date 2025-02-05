@@ -1,11 +1,30 @@
-# React + Vite
+# 🚀 React + Vite with React Router, Tailwind CSS & Redux Toolkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal yet powerful setup to get React running with Vite, featuring:
 
-Currently, two official plugins are available:
+- **✅ Fast HMR (Hot Module Replacement) via Vite**
+- **✅ Modern Styling with Tailwind CSS**
+- **✅ State Management using Redux Toolkit**
+- **✅ Client-side Routing powered by React Router**
+- **✅ Optimized Development Workflow with ESLint rules**
+
+## ✨ Features
+
+- **Lightning-fast builds with Vite 🚀**
+- **Hot Module Replacement (HMR) for instant updates**
+- **Flexible state management with Redux Toolkit**
+- **Efficient styling using Tailwind CSS**
+- **Declarative routing with React Router**
+- **Optional Babel or SWC support for React Fast Refresh**
+
+## 🔌 Official Plugins Available
+
+Vite provides two official plugins for React:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md): Uses [Babel](https://babeljs.io/) for Fast Refresh.
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc): Uses [SWC](https://swc.rs/) for Fast Refresh.
+
+## 🚀 Getting Started
 
 ## Step 0: Setup Project
 
@@ -24,7 +43,7 @@ cd <project-name>
 Next, install the necessary dependencies for Tailwind CSS and React Router:
 
 ```bash
-yarn add tailwindcss react-router
+yarn add tailwindcss react-router-dom @reduxjs/toolkit react-redux
 ```
 
 ## Step 1: Install ESLint and Prettier Packages
